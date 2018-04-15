@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Smart House</title>
+        <meta charset="UTF-8">
+        <!-- Material Design Lite -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+        <!-- my css script -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout-icon">
+                    <a href="index.html">
+                        <i class="material-icons">home</i>
+                    </a>
+                </div>
+                <div class="mdl-layout__header-row">
+                    <span class="mdl-layout-title">Controll kitchen lights</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <nav class="mdl-navigation mdl-layout--large-screen-only">
+                        <a class="mdl-navigation__link" href="http://validator.w3.org/check?uri=referer">
+                            Validate
+                        </a>
+                    </nav>
+                </div>
+            </header>
+            
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <table>
+                        <thead>
+                            <td>Kitchen</td>
+                            <td>Living Room</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <form method="GET" action="http://battlefield1408.tk:5000/kitchen/on" target="_blank">
+                                        <input type="submit" value="Switch ON">
+                                    </form>
+                                </td>
+                                <td>
+                                    <form method="GET" action="http://battlefield1408.tk:5000/living_room/on" target="_blank">
+                                        <input type="submit" value="Switch ON">
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form method="GET" action="http://battlefield1408.tk:5000/kitchen/off" target="_blank">
+                                        <input type="submit" value="Switch OFF">
+                                    </form>
+                                </td>
+                                <td>
+                                    <form method="GET" action="http://battlefield1408.tk:5000/living_room/off" target="_blank">
+                                        <input type="submit" value="Switch OFF">
+                                    </form>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
